@@ -30,7 +30,7 @@ Yeni atılan bir videonun 24 saatlik verileri çekilmişse saatlik_analiz.py dos
 
  - [saatlik_analiz_kontrol10dk.py](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/saatlik_analiz_kontrol10dk.py)
 
-24 saatlik verileri çekilmiş videonun istatistik verilerini saatlere göre böler, bu verileri görselleştirip instagram sayfasında paylaşır.
+24 saatlik verileri çekilmiş videonun istatistik verilerini saatlere göre analiz eder, bu verileri görselleştirip instagram sayfasında paylaşır.
 
  - [saatlik_analiz.py](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/saatlik_analiz.py)
 
