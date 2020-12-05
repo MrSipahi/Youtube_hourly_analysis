@@ -1,24 +1,24 @@
 # What is it ?
 
   
-Bu program veritabanında bulunan youtube kanallarının yeni atılan videosunun saatlik istatistik verilerini elde eder, analiz eder, görselleştirir ve instagram sayfasında paylaşır.
+This program obtains hourly statistical data of newly uploaded videos of youtube channels in the database, analyzes, visualizes and shares them on the instagram page.
 
 
 ![enter image description here](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/photo/post.PNG?raw=true)
 
 
 # How does it work
-Her 10 dakikada bir bütün kanalların yeni videolarını kontrol eder, eğer yeni atılan bir video varsa hem 'videoliste' tablosuna hem de 'yenivideo' tablosuna ekler.
+It checks the new videos of all channels every 10 minutes, if there is a new video, it adds it to both the 'videoliste' table and the 'yenivideo' table.
 
  - [yenivideo10dk.py
 ](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/yenivideo10dk.py)
 
 
-Her 5 dakikada bir yenivideo tablosuna yeni video eklenip eklenmediğini kontrol eder. Eğer yeni video varsa saatlik.py programını çalıştırır.
+It checks if a new video is added to the new video table every 5 minutes. If new video is available, it runs the saatlik.py program.
 
  - [yenivideo_kontrol5dk.py](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/yenivideo_kontrol5dk.py)
 
-Yeni atılan videonun 24 saat boyunca istatistik verilerini saat başı çeker ve 'saatlik' tablosuna bu verileri ekler.
+It pulls the statistics data of the newly posted video for 24 hours per hour and adds this data to the 'saatlik' table.
 
  - [saatlik.py](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/saatlik.py)
 
@@ -26,11 +26,11 @@ Yeni atılan videonun 24 saat boyunca istatistik verilerini saat başı çeker v
 
 ![enter image description here](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/photo/veri_istatistik.PNG?raw=true)
 
-Yeni atılan bir videonun 24 saatlik verileri çekilmişse saatlik_analiz.py dosyasını çalıştırır.
+Runs the saatlik_analiz.py file if 24-hour data of a newly posted video is captured.
 
  - [saatlik_analiz_kontrol10dk.py](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/saatlik_analiz_kontrol10dk.py)
 
-24 saatlik verileri çekilmiş videonun istatistik verilerini saatlere göre analiz eder, bu verileri görselleştirip instagram sayfasında paylaşır.
+It analyzes the statistical data of the 24-hour video according to the hours, visualizes this data and shares it on the Instagram page.
 
  - [saatlik_analiz.py](https://github.com/MrSipahi/Youtube_hourly_analysis/blob/main/saatlik_analiz.py)
 
